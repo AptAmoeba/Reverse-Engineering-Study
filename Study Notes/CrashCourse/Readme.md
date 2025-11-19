@@ -17,3 +17,13 @@ Click the link icon and set them both to the same Sync Group.
 
 Now, with them both on the same Sync Group, any click/highlight in one pane will go to the same location in the other!
 
+
+
+# Disassembly View Specifics
+
+What's the grey stuff after the memory addresses? It's the raw opcode for the iunstruction to the right of it. 
+
+Example:
+<img width="330" height="72" alt="image" src="https://github.com/user-attachments/assets/82bdc1bb-c7f2-48d7-9f2f-0d699f32e369" />
+
+Take these 3 MOV instructions. IDK. Josh said it was.
