@@ -9,7 +9,7 @@ In the malware source code, we have a variable in the .text section (code) calle
 
 &nbsp;
 
-In Binja's High-Level Interpreted Language, it resolves the bytes correctly into a plaintext string:
+In Binja's High-Level Interpreted Language, it resolves the bytes correctly into a plaintext string automatically:
 <img width="649" height="66" alt="image" src="https://github.com/user-attachments/assets/e8d9f811-f2ba-45fd-8fcc-447058aea799" />
 
 
