@@ -3,7 +3,11 @@ While analyzing a demo malware loader I built, I noticed something interesting:
 
 In the malware source code, we have a variable in the .text section (code) called "XOR-Key", which stores a key in the form of bytes:
 
-(image)
+<img width="681" height="66" alt="image" src="https://github.com/user-attachments/assets/4567cfa4-ad61-4692-8d14-f851e524ce4b" />
+
+(Malware source code)
+
+&nbsp;
 
 In Binja's High-Level Interpreted Language, it resolves the bytes correctly into a plaintext string:
 <img width="649" height="66" alt="image" src="https://github.com/user-attachments/assets/e8d9f811-f2ba-45fd-8fcc-447058aea799" />
@@ -17,6 +21,7 @@ However, opening this in the Hex Editor view, the key is incorrect:
 
 Showing "XORKey10H.......9" instead of "XORKey109"... why is this?
 
+&nbsp;
 
 Answer:
 
