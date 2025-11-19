@@ -2,6 +2,7 @@
 While analyzing a demo malware loader I built, I noticed something interesting:
 
 In the malware source code, we have a variable in the .text section (code) called "XOR-Key", which stores a key in the form of bytes:
+
 (image)
 
 In Binja's High-Level Interpreted Language, it resolves the bytes correctly into a plaintext string:
@@ -45,5 +46,5 @@ So, what are all the "H" characters in the Hex View, exactly? idk!
 
 &nbsp;
 
-### >What would this look like if the variable was global? What if it was larger than 9 bytes?
+### >What if the variable was stored in a different Section? What if it was larger than 9 bytes?
 
