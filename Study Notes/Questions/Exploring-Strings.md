@@ -18,12 +18,15 @@ In Binja's High-Level Interpreted Language, it resolves the bytes correctly into
 However, opening this in the Hex Editor view, the key is incorrect:
 <img width="619" height="49" alt="image" src="https://github.com/user-attachments/assets/4bdb7963-30f8-4b1d-aa4e-2da54d052aae" />
 
+It's also incorrect in other Hex Editors, like HxD:
+<img width="690" height="231" alt="image" src="https://github.com/user-attachments/assets/2c97d388-1aff-4ec3-ad5c-aefc0fa0ce73" />
+
 
 Showing "XORKey10H.......9" instead of "XORKey109"... why is this?
 
 &nbsp;
 
-Answer:
+### Answer
 
 The answer to our problem reveals itself in the Disassembly view! Let's swap from PE>Hex to PE>Linear>Disassembly above the window and look at that same variable initialization:
 <img width="1508" height="176" alt="image" src="https://github.com/user-attachments/assets/d0ec48c8-3bfb-4375-92d4-44983b7312ba" />
@@ -47,7 +50,7 @@ Turns out, the Hex Editor view included the opcodes that handle these strings ra
 &nbsp;
 
 ### >Subsequent Questions
-So, what are all the "H" characters in the Hex View, exactly? idk!
+So, what are all the "H" characters in the Hex View, exactly? idk! Supposedly "H" is the first hex byte of the specific MOV instructions which is why they are there. But... idk.
 
 &nbsp;
 
