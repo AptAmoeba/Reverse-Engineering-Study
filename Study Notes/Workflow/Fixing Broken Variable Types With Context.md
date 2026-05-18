@@ -63,14 +63,22 @@ Let's start with a part of the above code I left out:
 
 This is a bit confusing if you only look at resize_t as-is, without marking up your sample. So... let's mark it up and take another look!:
 
-(### todo: mark up and show clearer view)
+<img width="883" height="158" alt="image" src="https://github.com/user-attachments/assets/6e15afaf-15b4-42fe-b8df-8ac368c84294" />
 
+What I changed:
+- Manually decrypted each part and renamed the final variables to _"<DecryptedContent>"
 
-Now let's show the code immediately after the original screenshot (you'll see where my first screenshot ends overlapping at the 2600c2a61 instruction.). This is what immediately follows it:
+Great! Looks like it's building a URL, judging by the individual contents. This last bit about resizing (and now uint64_t after renaming a few) is just taking the length of each component and storing it in rax_13. You can probably guess that rax_13 is going to be used later as simply the total length to be allocated, likely for when the full URL is constructed!
 
-<img width="883" height="292" alt="image" src="https://github.com/user-attachments/assets/d8aa26c0-e2ab-4c87-93e2-898ea40fd0bc" />
+&nbsp;
 
-^### Replace this with the updated marked up version!
+## Putting it All Together
+
+Finally, let's show the code immediately after the original screenshot (you'll see where my first screenshot ends overlapping at the 2600c2a61 instruction.). This is what immediately follows it:
+
+<img width="887" height="163" alt="image" src="https://github.com/user-attachments/assets/230dc118-b0df-4328-8dc1-8a3ecffad7fa" />
+
+^### Replace the "CanReachInternet" with "hInternet"!
 
 It is important that we know how strcat works in C to understand what this is doing! Strcat APPENDS data onto a given string, so it keeps the old data and concatenates (adds) your new data to it. 
 
