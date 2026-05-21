@@ -6,7 +6,7 @@ This is a snippet of code from the High-Level IL part of a function. The screens
 
 It sets some variables, then later passes them into mw_DecryptXOR, and sets the decrypted strings into a new variable to user later on.
 
-- Tyhe EncStr_3 and EncStr_2 make total sense, because they're setting a data range and then a string into a variable to get decrypted. That makes sense.
+- The "EncStr_3" and "EncStr_2" make total sense, because they're setting a data range and then a string into a variable to get decrypted. That makes sense, and they're formatted decently.
 
 - But the following highlighted variables made ZERO sense:
 
