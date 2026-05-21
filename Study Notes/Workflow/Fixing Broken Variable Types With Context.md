@@ -2,7 +2,7 @@ Let me share something really cool I ran into.
 
 <img width="884" height="353" alt="image" src="https://github.com/user-attachments/assets/7c67d821-2b6e-4355-b3d0-8cbe55766f22" />
 
-This part of the function starts by checking if the internet handle works. If so, it proceeds.
+This is a snippet of code from the High-Level IL part of a function. The screenshoted code starts by checking if the internet handle works. If so, it proceeds.
 
 It sets some variables, then later passes them into mw_DecryptXOR, and sets the decrypted strings into a new variable to user later on.
 
