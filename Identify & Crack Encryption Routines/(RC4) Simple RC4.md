@@ -9,4 +9,5 @@ If the operation also has a modulo with some value "i % <n>" thrown in there, us
 &nbsp;
 
 ## Via Windows API
-SystemFunction032 (Advapi32.dll)
+SystemFunction032 (from Advapi32.dll)
+SystemFunction0322(data,key)
